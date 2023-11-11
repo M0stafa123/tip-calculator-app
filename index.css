@@ -159,11 +159,12 @@ main .body > div:last-of-type {
   border: 1px solid red !important;
   position: relative;
   &::after {
-    content: "can't be zero";
+    content: "can't be less than zero";
     position: absolute;
     right: 0;
     top: -27px;
     color: #ff000096;
+    font-size: 14px;
   }
 }
 @media (max-width: 800px) {
@@ -186,5 +187,8 @@ main .body > div:last-of-type {
     & > div {
       width: 100% !important;
     }
+  }
+  .err-zero::after {
+    top: 100%;
   }
 }
