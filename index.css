@@ -150,6 +150,7 @@ main .body > div:last-of-type {
     border-radius: 3px;
     background-color: #27beaa4d;
     cursor: pointer;
+    text-transform: uppercase;
   }
 }
 .tip span.active {
